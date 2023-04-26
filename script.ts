@@ -12,6 +12,14 @@
 
 // consolelet
 
-let admin = 'Jon'
-let name1 = 'Jon'
-console.log(admin)
+// let admin = 'Jon'
+// let name1 = 'Jon'
+// console.log(admin)
+
+// const x = ('Введите число','0')
+
+console.log('typeof(NaN)'), typeof (NaN)
+console.log('typeof(15)'), typeof (15)
+console.log('type(Infinity)'), typeof (Infinity)
+
+
