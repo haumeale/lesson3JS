@@ -63,15 +63,35 @@
 //   console.log("error");
 // }
 
-let x = +prompt("координаты точки x");
-let y = +prompt("координаты точки y");
-if (x > 0 && y > 0){
-    alert("First quarter")
-} else if (x < 0 && y > 0) {
-    alert("Second quarter")
-} else if (x < 0 && y < 0) {
-    alert("Third quarter")
-} else if (x > 0 && y < 0){
-    alert("Fourth quarter")
+// let x = +prompt("координаты точки x");
+// let y = +prompt("координаты точки y");
+// if (x > 0 && y > 0){
+//     alert("First quarter")
+// } else if (x < 0 && y > 0) {
+//     alert("Second quarter")
+// } else if (x < 0 && y < 0) {
+//     alert("Third quarter")
+// } else if (x > 0 && y < 0){
+//     alert("Fourth quarter")
+// }
+
+let a = prompt('Кто ты')
+if (a == 'Админ'){
+    let a  = prompt('Введите пароль')
+    if (a == 'Я главный'){
+        alert ('Здравствуйте')
+    } else if(a == null){
+        alert('Отмена')
+    } 
+    else {
+        alert('Неверный пароль')
+    } 
 }
+else if (a == null){
+    alert('Отмена')
+} 
+else {
+    alert('Я вас не знаю')
+}
+
 

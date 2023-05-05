@@ -46,17 +46,33 @@
 // } else {
 //   console.log("error");
 // }
-var x = +prompt("координаты точки x");
-var y = +prompt("координаты точки y");
-if (x > 0 && y > 0) {
-    alert("First quarter");
+// let x = +prompt("координаты точки x");
+// let y = +prompt("координаты точки y");
+// if (x > 0 && y > 0){
+//     alert("First quarter")
+// } else if (x < 0 && y > 0) {
+//     alert("Second quarter")
+// } else if (x < 0 && y < 0) {
+//     alert("Third quarter")
+// } else if (x > 0 && y < 0){
+//     alert("Fourth quarter")
+// }
+var a = prompt('Кто ты');
+if (a == 'Админ') {
+    var a_1 = prompt('Введите пароль');
+    if (a_1 == 'Я главный') {
+        alert('Здравствуйте');
+    }
+    else if (a_1 == null) {
+        alert('Отмена');
+    }
+    else {
+        alert('Неверный пароль');
+    }
 }
-else if (x < 0 && y > 0) {
-    alert("Second quarter");
+else if (a == null) {
+    alert('Отмена');
 }
-else if (x < 0 && y < 0) {
-    alert("Third quarter");
-}
-else if (x > 0 && y < 0) {
-    alert("Fourth quarter");
+else {
+    alert('Я вас не знаю');
 }
