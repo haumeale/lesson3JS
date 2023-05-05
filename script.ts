@@ -75,23 +75,36 @@
 //     alert("Fourth quarter")
 // }
 
-let a = prompt('Кто ты')
-if (a == 'Админ'){
-    let a  = prompt('Введите пароль')
-    if (a == 'Я главный'){
-        alert ('Здравствуйте')
-    } else if(a == null){
-        alert('Отмена')
-    } 
-    else {
-        alert('Неверный пароль')
-    } 
-}
-else if (a == null){
-    alert('Отмена')
-} 
-else {
-    alert('Я вас не знаю')
+// let a = prompt('Кто ты')
+// if (a == 'Админ'){
+//     let a  = prompt('Введите пароль')
+//     if (a == 'Я главный'){
+//         alert ('Здравствуйте')
+//     } else if(a == null){
+//         alert('Отмена')
+//     } 
+//     else {
+//         alert('Неверный пароль')
+//     } 
+// }
+// else if (a == null){
+//     alert('Отмена')
+// } 
+// else {
+//     alert('Я вас не знаю')
+// }
+
+const maxNumber = +(prompt('До какого числа искать простые') as string)
+console.log(`Простые числа до ${maxNumber}`)
+for (let i=2; i<maxNumber;i++){
+    let isSimple = true
+    for(let j=2; j<1; j++){
+        if (i%j==0){
+         isSimple=false
+         break
+        }
+    }
+    if (isSimple) console.log(i) 
 }
 
 

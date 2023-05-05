@@ -57,22 +57,34 @@
 // } else if (x > 0 && y < 0){
 //     alert("Fourth quarter")
 // }
-var a = prompt('Кто ты');
-if (a == 'Админ') {
-    var a_1 = prompt('Введите пароль');
-    if (a_1 == 'Я главный') {
-        alert('Здравствуйте');
+// let a = prompt('Кто ты')
+// if (a == 'Админ'){
+//     let a  = prompt('Введите пароль')
+//     if (a == 'Я главный'){
+//         alert ('Здравствуйте')
+//     } else if(a == null){
+//         alert('Отмена')
+//     } 
+//     else {
+//         alert('Неверный пароль')
+//     } 
+// }
+// else if (a == null){
+//     alert('Отмена')
+// } 
+// else {
+//     alert('Я вас не знаю')
+// }
+var maxNumber = +prompt('До какого числа искать простые');
+console.log("\u041F\u0440\u043E\u0441\u0442\u044B\u0435 \u0447\u0438\u0441\u043B\u0430 \u0434\u043E " + maxNumber);
+for (var i = 2; i < maxNumber; i++) {
+    var isSimple = true;
+    for (var j = 2; j < 1; j++) {
+        if (i % j == 0) {
+            isSimple = false;
+            break;
+        }
     }
-    else if (a_1 == null) {
-        alert('Отмена');
-    }
-    else {
-        alert('Неверный пароль');
-    }
-}
-else if (a == null) {
-    alert('Отмена');
-}
-else {
-    alert('Я вас не знаю');
+    if (isSimple)
+        console.log(i);
 }
